@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const articlesRoutes = require('./routes/article');
 const userRoutes = require('./routes/user');
 
-mongoose.connect('mongodb+srv://MLDL:MlDlPass@cluster0.batv4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+const monUrl = process.env.DB_CONNECTION
+mongoose.connect('monUrl',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
