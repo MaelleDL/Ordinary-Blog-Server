@@ -1,0 +1,33 @@
+{
+  "name": "ordinary-blog-server",
+  "version": "1.0.0",
+  "description": "a basic blog for practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaelleDL/Ordinary-Blog-Server.git"
+  },
+  "keywords": [
+    "blog",
+    "mongoDB",
+    "express"
+  ],
+  "author": "Maëlle Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaelleDL/Ordinary-Blog-Server/issues"
+  },
+  "homepage": "https://github.com/MaelleDL/Ordinary-Blog-Server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.3"
+  }
+}
